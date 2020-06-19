@@ -13,5 +13,7 @@ function onInPhraseChange() {
 function init() {
     var inPhraseInput = document.getElementById("in-phrase");
     inPhraseInput.addEventListener("input", onInPhraseChange);
+    // Automatically do phrase for existing value
+    onInPhraseChange();
 }
 window.addEventListener("load", init);
