@@ -19,12 +19,12 @@ body {
   text-align: center;
 }
 #main h1 {
+  margin-bottom: 2rem;
   font-size: 3em;
-  margin-bottom: 0.5rem;
 }
 
 .form-control {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -35,12 +35,36 @@ body {
   margin-bottom: 0.2em;
 }
 .form-control input {
-  padding: 0.2em;
+  padding: 0.3em 0.6em;
   font-size: 1.2em;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid #333;
+  background-color: transparent;
+}
+.form-control input:focus {
+  border-bottom: 2px solid #333;
+}
+.form-control input[readonly] {
+  cursor: default;
+  border-bottom: 2px solid #333;
 }
 .form-control input.large {
   width: 60vw;
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 412px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+  .form-control input, .form-control input.large {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

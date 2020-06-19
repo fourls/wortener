@@ -35,15 +35,18 @@ body {
 
   // Page title
   h1 {
+    //== Positioning
+    margin-bottom: 2rem;
+
+    //== Text
     font-size: 3em;
-    margin-bottom: 0.5rem;
   }
 }
 
 // Contains label/input pairs
 .form-control {
   //== Positioning
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 
   //== Flex
   display: flex;
@@ -60,14 +63,44 @@ body {
 
   input {
     //== Positioning
-    padding: 0.2em;
+    padding: 0.3em 0.6em;
 
     //== Text
     font-size: 1.2em;
+    color: $dark;
+
+    //== Graphics
+    border: none;
+    border-bottom: 2px solid $dark;
+    background-color: transparent;
+
+    &:focus {
+      border-bottom: 2px solid $dark;
+    }
+    
+    &[readonly] {
+      cursor: default;
+      border-bottom: 2px solid $dark;
+    }
   }
 
+  // Inputs that are supposed to draw attention
   input.large {
     width: 60vw;
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .form-control {
+    width: 100%;
+
+    input, input.large {
+      width: 100%;
+    }
   }
 }
