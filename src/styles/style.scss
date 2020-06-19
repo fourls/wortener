@@ -73,6 +73,7 @@ body {
     //== Graphics
     border: none;
     border-bottom: 2px solid $dark;
+    border-radius: 0;
     background-color: transparent;
 
     &:focus {
