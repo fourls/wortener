@@ -1,14 +1,5 @@
 "use strict";
 
-// The magic phrase shortening function
-function shortenPhrase(inPhrase) {
-  var outPhrase = "";
-
-  inPhrase = inPhrase.trim();
-
-  return outPhrase;
-}
-
 // Called when the user types in a new in phrase value
 function onInPhraseChange() {
   var inPhrase = document.getElementById("in-phrase").value;
