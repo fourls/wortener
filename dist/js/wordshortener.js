@@ -1,3 +1,4 @@
+"use strict";
 // The magic phrase shortening function
 function shortenPhrase(inPhrase) {
     inPhrase = inPhrase.trim();
